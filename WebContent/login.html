@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <style>
+            body{
+                background-color: aquamarine ;
+            }
+            
+            .form{
+                height: 50%;
+                max-width: 360px;
+                margin: 5% auto; 
+            }
+            
+            h2{
+                text-align: center;
+                color:crimson;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="form center-block" id="loginForm">
+                <h2 >Login Page</h2>
+                <form method="POST" action="j_security_check">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input class="form-control" type="text" placeholder="admin" name="j_username"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Password:</label>
+                        <input class="form-control" type="password" placeholder="12345" name="j_password"/>
+                    </div>
+                    <div class="row">
+                            <input class="center-block btn-default btn " type="submit" value="Login" />
+                        </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
