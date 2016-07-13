@@ -13,7 +13,7 @@ function getPerson(){
 		  success : function(retVal){			
 			var mydata = [{tc:retVal.tc,name:retVal.name,phone:retVal.phone}];
 				
-			/* update test */
+			/* update test2 */
 				$("#gridTable").jqGrid({
 					datatype: "local",
 					height: 100,
